@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Abertura de Chamado - TI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        select, input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #006400;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d00;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Solicitação de Chamado - TI</h2>
+
+    <form>
+        <!-- 1 - Grad/Post -->
+        <label for="grad">Graduação / Posto</label>
+        <select id="grad" name="grad" required>
+            <option value="">Selecione</option>
+            <option>Soldado</option>
+            <option>Cabo</option>
+            <option>3º Sargento</option>
+            <option>2º Sargento</option>
+            <option>1º Sargento</option>
+            <option>Subtenente</option>
+            <option>Aspirante</option>
+            <option>2º Tenente</option>
+            <option>1º Tenente</option>
+            <option>Capitão</option>
+            <option>Major</option>
+            <option>Tenente-Coronel</option>
+            <option>Coronel</option>
+        </select>
+
+        <!-- 2 - Nome de Guerra -->
+        <label for="nome">Nome de Guerra</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome de guerra" required>
+
+        <!-- 3 - Seção / Cia -->
+        <label for="secao">Sua Seção / Companhia</label>
+        <input type="text" id="secao" name="secao" placeholder="Ex: 1ª Cia, S1, S4" required>
+
+        <!-- 4 - Descrição do problema -->
+        <label for="problema">Descreva o problema</label>
+        <textarea id="problema" name="problema" placeholder="Descreva detalhadamente o problema que está enfrentando" required></textarea>
+
+        <!-- 5 - Contato -->
+        <label for="contato">Contato (DDD + Número)</label>
+        <input type="tel" id="contato" name="contato" placeholder="Ex: (21) 99999-9999" required>
+
+        <button type="submit">Enviar Chamado</button>
+    </form>
+
+    <div class="footer">
+        Seção de TI • Atendimento ao Usuário
+    </div>
+</div>
+
+</body>
+</html>
